@@ -96,7 +96,7 @@ A static convenience method to construct and load a sound is also provided:
 
     -   **source (_object_ / _number_ / _Asset_)** -- The source of the sound. The following forms are supported:
 
-        -   A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
+        -   A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.(Note: iOS may throw an 'AVPlayerItem instance has failed...' error if the url does not end in the filetype, e.g. http://path/to/file.mp3).
         -   `require('path/to/file')` for an audio file asset in the source code directory.
         -   An [`Expo.Asset`](asset.html) object for an audio file asset.
 
